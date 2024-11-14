@@ -1,0 +1,164 @@
+.tittle{
+    text-align: center;
+}
+
+.container-tabla{
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Estilo para la tabla */
+.modelTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    color: rgb(36, 36, 36);
+}
+
+.modelTable th{
+    position: sticky;
+    text-transform: uppercase;
+}
+
+/* Estilo para las celdas */
+.modelTable th, .modelTable td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+
+/* Fila par con fondo blanco */
+.modelTable tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Fila impar con fondo gris claro */
+.modelTable tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para el encabezado de la tabla */
+.modelTable th {
+    background-color: #4a4b4a; /* Color de fondo para el encabezado */
+    color: white;
+    font-weight: bold;
+}
+
+.modelTable button{
+    padding: .4rem .7rem;
+    width: 40%;
+    text-align: center;
+    margin: 5px;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+#editar{
+    background-color: rgb(2, 196, 2);
+}
+
+#editar:hover{
+    background-color: rgb(2, 146, 2);
+    cursor: pointer;
+}
+
+#eliminar{
+    background-color: rgb(218, 2, 2);
+}
+
+#eliminar:hover{
+    background-color: rgb(158, 2, 2);
+    cursor: pointer;
+}
+
+
+/*.createForm Estilo para el formulario con la clase .createForm */
+.createForm, .editForm {
+    max-width: 500px;
+    margin: 0 auto;  /* Centra el formulario en la página */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para los títulos dentro del formulario */
+.createForm h2,
+.editForm h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas (labels) */
+.createForm label,
+.editForm label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Estilo para los campos de entrada (input, select, textarea) */
+.createForm input, .createForm select, .createForm textarea,
+.editForm input, .editForm select, .editForm textarea {
+    color: rgb(54, 54, 54);
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px; /* Espaciado entre los campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo para los campos de entrada al pasar el mouse */
+.createForm input:focus, .createForm select:focus, .createForm textarea:focus {
+    border-color: #4CAF50; /* Cambia el borde a verde cuando el campo tiene el foco */
+    outline: none; /* Elimina el borde del enfoque predeterminado */
+}
+
+/* Estilo para los botones */
+.createForm button,
+.editForm button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el botón al pasar el mouse */
+.createForm button:hover,
+.editForm button:hover {
+    background-color: #45a049; /* Fondo más oscuro cuando el mouse está encima */
+}
+
+/* Estilo para los mensajes de error */
+.createForm .error,
+.editForm .error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.editForm button{
+    margin: 1rem 0
+}
+
+.editForm{
+    min-width: 400px;
+    position: absolute;
+    top: 20%;
+    right: 35%;
+}
+.container-form{
+    margin: 5rem 0;
+}
+

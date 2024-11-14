@@ -1,0 +1,20 @@
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem;
+}
+
+.inputForm{
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.btnForm{
+    margin-top: 1rem;
+    background-color: #00bfff;
+}
+
+.container{
+    margin-top: 7rem;
+}
